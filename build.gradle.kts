@@ -15,7 +15,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("DatabaseFeeder")
+    mainClass.set("org.example.DatabaseFeeder")
 }
 
 java {
