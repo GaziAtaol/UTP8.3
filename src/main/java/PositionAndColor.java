@@ -11,9 +11,9 @@ public class PositionAndColor {
 
     public static int[] decode(int value) {
 
-        int x = value & 0xFFF;                  // dolne 12 bitów
-        int y = (value >> 12) & 0xFFF;          // kolejne 12 bitów
-        int colorByte = (value >> 24) & 0xFF;   // górny bajt (3-3-2)
+        int x = value & 0xFFF;                  // lower 12 bits
+        int y = (value >> 12) & 0xFFF;          // next 12 bits
+        int colorByte = (value >> 24) & 0xFF;   // upper byte (3-3-2)
 
         return new int[]{ x, y, colorByte};
     }

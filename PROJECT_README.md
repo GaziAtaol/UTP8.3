@@ -75,7 +75,7 @@ java -cp "build/classes/java/main:~/.gradle/caches/modules-2/files-2.1/com.h2dat
 ### Step 4: Verify the Results
 
 ```bash
-java -cp "build/classes/java/main:~/.gradle/caches/modules-2/files-2.1/com.h2database/h2/2.2.224/*/h2-2.224.jar" VerifyDatabase
+java -cp "build/classes/java/main:~/.gradle/caches/modules-2/files-2.1/com.h2database/h2/2.2.224/*/h2-2.2.224.jar" VerifyDatabase
 ```
 
 ## How It Works
