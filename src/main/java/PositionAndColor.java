@@ -1,7 +1,6 @@
 import java.awt.*;
 
-public
-    class PositionAndColor {
+public class PositionAndColor {
 
     public static int encode(int x, int y, Color color){
         int result = x & 0xFFF;

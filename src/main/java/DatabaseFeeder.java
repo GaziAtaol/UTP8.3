@@ -9,8 +9,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public
-    class DatabaseFeeder {
+public class DatabaseFeeder {
 
     public static void main(String[] args){
         // Path to the circles.bin file
