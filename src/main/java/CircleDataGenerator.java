@@ -1,3 +1,5 @@
+package org.example;
+
 import java.awt.*;
 import java.io.IOException;
 import java.nio.ByteBuffer;

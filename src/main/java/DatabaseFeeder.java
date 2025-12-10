@@ -1,3 +1,5 @@
+package org.example;
+
 import java.awt.*;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -8,6 +10,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
+import static org.example.PositionAndColor.byteToColor;
 
 public class DatabaseFeeder {
 
@@ -32,7 +36,7 @@ public class DatabaseFeeder {
                 int[] res = PositionAndColor.decode(val);
                 
                 // Convert color byte to Color object
-                Color c = PositionAndColor.byteToColor(res[2]);
+                Color c = byteToColor(res[2]);
                 
                 // Set the parameters in the PreparedStatement
                 ps.setInt(1, res[0]);          // x coordinate
